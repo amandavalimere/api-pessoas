@@ -1,13 +1,15 @@
-import { Pessoa } from "../model/Pessoa"
+import { Pessoa } from "../model/Pessoa";
 
-let pessoa = new Pessoa('Amadea',
-                        '1111111111',
-                        new Date(2000,9,15),
-                        '000000000',
-                        'Rua Número 1',
-                        170,
-                        70);
-pessoa.falar();
+let listaPessoas = [];
+
+let pessoa = new Pessoa('Maria Zeferina',
+                        '333333333',
+                        new Date(1972,8,29),
+                        '999999999',
+                        'Rua das Corridas',
+                        165,
+                        55);
+pessoa.cadastroPessoa(pessoa);
 
 
 pessoa.falarfrase("VAI CURINTIA!!! BANDO DE OREIUDO");
